@@ -1,0 +1,221 @@
+/* --- CONFIGURAÇÕES BÁSICAS --- */
+:root {
+    --bg-main: #0a0a0a;
+    --bg-secondary: #141414;
+    --text-main: #f0f0f0;
+    --text-muted: #888888;
+    --accent-color: #00e5ff; /* Um azul ciano para botões (mude se quiser) */
+    --accent-hover: #00b3cc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* --- HEADER E NAVEGAÇÃO --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: rgba(10, 10, 10, 0.9);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* --- BOTÕES --- */
+.btn-primary, .btn-secondary, .btn-large {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0, 229, 255, 0.1);
+}
+
+.btn-large {
+    background-color: var(--accent-color);
+    color: #000;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+/* --- SEÇÃO HERO (TOPO) --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 5%;
+    min-height: 80vh;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.placeholder-img {
+    width: 100%;
+    height: 400px;
+    background-color: var(--bg-secondary);
+    border: 1px dashed #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    border-radius: 8px;
+}
+
+/* --- SEÇÕES GERAIS --- */
+section {
+    padding: 5rem 5%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* --- DEMO DE ÁUDIO --- */
+.audio-demo {
+    background-color: var(--bg-secondary);
+}
+
+.demo-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.demo-track {
+    background-color: var(--bg-main);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid #222;
+}
+
+.player-box {
+    margin-top: 1rem;
+    height: 50px;
+    background-color: #222;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* --- RECURSOS (GRID) --- */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    border: 1px solid #222;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.feature-card p {
+    color: var(--text-muted);
+}
+
+/* --- DOWNLOAD FINAL E FOOTER --- */
+.download-section {
+    text-align: center;
+    background-color: var(--bg-secondary);
+    border-top: 1px solid #222;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #222;
+    color: var(--text-muted);
+}
